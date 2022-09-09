@@ -1,0 +1,35 @@
+.form-div{
+    display:flex;
+    flex-direction: column;
+    gap:.6rem;
+}
+.label{
+    font-weight: 400;
+    font-size: .7rem;
+    padding-left:1rem;
+}
+.input{
+    border:1px solid #5e5e5e;
+    border-radius: 2rem;
+    padding:.6rem .9rem;
+    z-index: 2;
+}
+
+.invalid{
+    border: 1px solid rgb(255, 83, 83);
+    background-color: rgba(255, 0, 0, 0.151);
+}
+.input:focus{
+    outline: none;
+    border: 1px solid rgb(107, 107, 107);
+    background-color: white;
+}
+
+.span{
+    font-size: .7rem;
+    position:absolute;
+    padding-top: 4rem;
+    padding-left: .8rem;
+    color: red;
+
+}

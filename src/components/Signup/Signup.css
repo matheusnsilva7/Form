@@ -1,0 +1,17 @@
+.back{
+    position:absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.back:visited,
+.back:link,
+.back:active{
+    color: #5e5e5e;
+}
+.signup-title{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    padding-top:7px;
+}

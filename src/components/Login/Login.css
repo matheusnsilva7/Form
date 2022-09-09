@@ -1,0 +1,22 @@
+.title{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 500;
+}
+.subtitle{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+}
+.create{
+    font-size: .7rem;
+    text-align: center;
+    font-weight: 300;
+    padding-top: .5rem;
+}
+.create-link,
+.create-link:visited,
+.create-link:link,
+.create-link:active{
+    color: #7dd56f;
+}

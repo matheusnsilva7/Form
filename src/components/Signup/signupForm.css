@@ -1,0 +1,20 @@
+.signup-form{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding-top: .7rem;
+}
+.signup-button{
+    background-color:#7dd56f;
+    border:none;
+    color:white;
+    margin: auto;
+    width:10rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    
+}
+.signup-button:hover{
+    background-color:#7dd56fcc;
+}
