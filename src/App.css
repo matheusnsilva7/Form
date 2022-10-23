@@ -1,8 +1,8 @@
-.background{
-  width:100vw;
-  height:100vh;
+.background {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(to top left, #28b487, #7dd56f);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

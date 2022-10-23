@@ -1,32 +1,32 @@
-.form{
-    display:flex;
-    flex-direction: column;
-    gap:2rem;
-    padding:1.5rem 0;
-    position:relative
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  position: relative;
 }
-.button{
-    background-color:#7dd56f;
-    border:none;
-    color:white;
-    margin: auto;
-    width:10rem;
-    height: 2rem;
-    cursor: pointer;
-    border-radius: 2rem;
-    margin-top: 5px;
+.button {
+  background-color: #7dd56f;
+  border: none;
+  color: white;
+  margin: auto;
+  width: 10rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  margin-top: 5px;
 }
-.button:hover{
-    background-color:#7dd56fcc;
+.button:hover {
+  background-color: #7dd56fcc;
 }
 .changepassword-link,
 .changepassword-link:visited,
 .changepassword-link:link,
-.changepassword-link:active{
-    color:#7dd56f;
-    position:absolute;
-    right:1rem;
-    bottom: 4.5rem;
-    font-size: .7rem;
-    text-decoration: none;
+.changepassword-link:active {
+  color: #7dd56f;
+  position: absolute;
+  right: 1rem;
+  bottom: 4.5rem;
+  font-size: 0.7rem;
+  text-decoration: none;
 }

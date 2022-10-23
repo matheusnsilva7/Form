@@ -1,10 +1,9 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from './components/Login/Login';
-import Signup from './components/Signup/Signup';
-import ChangePassword from './components/changePassword/ChangePassword';
+import { Routes, Route, Navigate } from "react-router-dom";
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
+import ChangePassword from "./components/changePassword/ChangePassword";
 
-import './App.css';
-
+import "./App.css";
 
 function App() {
   return (
@@ -17,6 +16,6 @@ function App() {
       </Routes>
     </div>
   );
-};
+}
 
 export default App;

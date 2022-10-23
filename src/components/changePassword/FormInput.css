@@ -14,7 +14,6 @@
   padding: 0.6rem 0.9rem;
   z-index: 2;
 }
-
 .invalid {
   border: 1px solid rgb(255, 83, 83);
   background-color: rgba(255, 0, 0, 0.151);
@@ -24,7 +23,6 @@
   border: 1px solid rgb(107, 107, 107);
   background-color: white;
 }
-
 .span {
   font-size: 0.7rem;
   position: absolute;

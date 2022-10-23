@@ -1,7 +1,7 @@
-import { configureStore, createSlice } from '@reduxjs/toolkit';
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const formFunction = createSlice({
-  name: 'form',
+  name: "form",
   initialState: {
     users: [],
   },
@@ -15,10 +15,15 @@ const formFunction = createSlice({
       });
     },
     changePassword: (state, action) => {
-      const index = state.users.findIndex((element) => element.Email === action.payload.Email)
-      state.users[index] = { ...state.users[index], Password: action.payload.Password }
+      const index = state.users.findIndex(
+        (element) => element.Email === action.payload.Email
+      );
+      state.users[index] = {
+        ...state.users[index],
+        Password: action.payload.Password,
+      };
     },
-  }
+  },
 });
 
 export const { AddUser, changePassword } = formFunction.actions;
