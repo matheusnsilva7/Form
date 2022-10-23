@@ -12,9 +12,14 @@ const Signupform = function () {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [successfulMessage, setSuccessfulMessage] = useState(false);
+  const [formValid, setFormValid] = useState({
+    Username: true,
+    Email:true,
+  })
 
   const handlerSubmit = (e) => {
     e.preventDefault();
+    if(!formValid.Username || !formValid.Email)return
     const data = Object.fromEntries(new FormData(e.target));
     dispatch(
       AddUser({
@@ -46,6 +51,7 @@ const Signupform = function () {
               pattern={element.pattern}
               errorMessage={element.errorMessage}
               errorExistsMessage={element.errorExistsMessage}
+              setFormValid={setFormValid}
             />
           );
         })}

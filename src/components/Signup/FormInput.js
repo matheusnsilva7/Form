@@ -9,6 +9,7 @@ const FormInput = React.memo(function ({
   pattern,
   errorMessage,
   errorExistsMessage,
+  setFormValid,
 }) {
   const users = useSelector((state) => state.form.users);
   const [value, setValue] = useState("");
@@ -18,27 +19,23 @@ const FormInput = React.memo(function ({
     setInvalid(false);
   }, [value]);
 
-  const onChange = (e) => {
-    setValue(e.target.value);
-  };
+  const onChange = (e) => setValue(e.target.value);
   const onBlur = (e) => {
-    if (
-      name === "Username" &&
-      users.filter((e) => e.Username === value).length >= 1
-    ) {
+    if (name === "Username" && users.filter((e) => e.Username === value).length >= 1) {
       setInvalid({ exists: true });
+      setFormValid((prev) => {return { ...prev, Username: false }});
       return;
     }
-    if (
-      name === "Email" &&
-      users.filter((e) => e.Email === value).length >= 1
-    ) {
+    if (name === "Email" && users.filter((e) => e.Email === value).length >= 1) {
       setInvalid({ exists: true });
+      setFormValid((prev) => {return { ...prev, Email: false }});
       return;
     }
-    if (!new RegExp(e.target.pattern).test(e.target.value)) {
-      setInvalid({ valid: true });
-    }
+    if (!new RegExp(e.target.pattern).test(e.target.value))setInvalid({ valid: true });
+    if (name === "Email" && users.filter((e) => e.Email === value).length === 0)
+      setFormValid((prev) => {return { ...prev, Email: true }});
+    if (name === "Username" && users.filter((e) => e.Username === value).length === 0)
+      setFormValid((prev) => {return { ...prev, Username: true };});
   };
   return (
     <div className="form-div">
