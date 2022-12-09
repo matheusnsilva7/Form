@@ -27,3 +27,9 @@
   font-size: 1.4rem;
   text-align: center;
 }
+@media (max-width:900px){
+  .container-div {
+    padding: 2rem;
+    width: 15rem;
+  }
+}

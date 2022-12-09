@@ -26,7 +26,6 @@ const FormPassword = () => {
             key={element.name}
             type={element.type}
             name={element.name}
-            placeholder={element.placeholder}
             pattern={element.pattern}
             errorMessage={element.errorMessage}
             valid={invalid[element.name]}

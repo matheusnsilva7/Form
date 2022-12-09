@@ -41,14 +41,14 @@ const Data = {
     input: [
       {
         type: "password",
-        name: "newPassword",
+        name: "New Password",
         placeholder: "New Password",
         pattern: "[A-Za-z0-9]{5,16}$",
         errorMessage: "Password must have at least 5 characters",
       },
       {
         type: "password",
-        name: "confirmPassword",
+        name: "Confirm Password",
         placeholder: "Confirm Password",
         errorMessage: "Confirm password does not match",
       },

@@ -4,7 +4,6 @@ import "./FormInput.css";
 const FormInput = React.memo(function ({
   name,
   type,
-  placeholder,
   valid,
   pattern,
   errorMessage,
@@ -41,14 +40,13 @@ const FormInput = React.memo(function ({
   return (
     <div className="form-div">
       <label className="label" htmlFor={name}>
-        {placeholder ? placeholder : name}
+        {name}
       </label>
       <input
         onBlur={onBlur}
         onChange={onChange}
         className={invalid ? "input invalid" : "input"}
         type={type}
-        placeholder={placeholder ? placeholder : name}
         name={name}
         id={name}
         pattern={pattern}

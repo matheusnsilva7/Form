@@ -28,7 +28,6 @@ const FormInput = function ({
         onChange={onChange}
         className={invalid ? "input invalid" : "input"}
         type={type}
-        placeholder={name}
         name={name}
         id={name}
         pattern={pattern}
