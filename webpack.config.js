@@ -1,5 +1,5 @@
-{
-  devServer: {
-    historyApiFallback: true;
-  }
-}
+module.exports = {
+    devServer: {
+      historyApiFallback: true,
+    },
+  };
