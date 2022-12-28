@@ -10,6 +10,8 @@ const FormPassword = () => {
     confirmPassword: false,
   });
 
+  console.log(invalid);
+
   useEffect(() => {
     if (password !== confirmPassword && confirmPassword.length !== 0) {
       setInvalid((prev) => {
@@ -26,7 +28,9 @@ const FormPassword = () => {
             key={element.name}
             type={element.type}
             name={element.name}
-            pattern={element.name === "Confirm Password" ? password :element.pattern}
+            pattern={
+              element.name === "Confirm Password" ? password : element.pattern
+            }
             errorMessage={element.errorMessage}
             valid={invalid[element.name]}
             setValid={setInvalid}

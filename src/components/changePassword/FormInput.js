@@ -20,10 +20,11 @@ const FormInput = React.memo(function ({
 
   const onChange = (e) => {
     if (type === "email") onEmail(false);
-    if (name === "confirmPassword")
+    if (name === "Confirm Password")
       setValid((prev) => {
         return { ...prev, confirmPassword: false };
       });
+    setInvalid(false);
   };
 
   const onBlur = (e) => {
@@ -33,8 +34,8 @@ const FormInput = React.memo(function ({
     if (new RegExp(e.target.pattern).test(e.target.value)) {
       setInvalid(false);
     }
-    if (name === "confirmPassword") setConfirmPassword(e.target.value);
-    if (name === "newPassword") setPassword(e.target.value);
+    if (name === "Confirm Password") setConfirmPassword(e.target.value);
+    if (name === "New Password") setPassword(e.target.value);
   };
 
   return (
