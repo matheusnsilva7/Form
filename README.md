@@ -24,7 +24,7 @@ The Auth System project showcases a front-end authentication flow with features 
 
 ## Demo
 
-Explore the live demo of the Auth System: [https://auth-system-demo.netlify.app](https://auth-system-demo.netlify.app)
+Explore the live demo of the Auth System: [https://form-matheusnsilva7.netlify.app/](https://form-matheusnsilva7.netlify.app/)
 
 ## License
 
