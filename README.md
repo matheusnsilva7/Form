@@ -1,6 +1,6 @@
 # Auth System with React and Redux
 
-Build a simple authentication system with login, account creation, and password change pages using React and Redux. This project demonstrates how to manage user authentication locally using local storage.
+Simple authentication form with login, account creation, and password recovery pages using React and Redux. This project demonstrates how to create a form that enables users to log in through local storage.
 
 ## Table of Contents
 
